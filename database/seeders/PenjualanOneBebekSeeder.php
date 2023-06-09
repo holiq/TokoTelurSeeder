@@ -28,9 +28,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-90 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-90 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 5,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -42,9 +42,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-90 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-90 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 15,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -56,9 +56,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-89 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-89 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 5,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -70,9 +70,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-89 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-89 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 10,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -84,9 +84,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-88 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-88 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 5,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -98,9 +98,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-88 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-88 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 10,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -112,9 +112,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-87 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-87 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 5,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -126,9 +126,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-87 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-87 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 10,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -140,9 +140,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-86 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-86 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 5,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -154,9 +154,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-86 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-86 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 10,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -168,9 +168,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-85 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-85 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 5,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -182,9 +182,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-85 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-85 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 10,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -196,9 +196,9 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-84 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-84 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 5,
-        ], $telurBebek->id);
+        ]);
 
         Transaction::query()->insert([
             'user_id' => $kasir->id,
@@ -210,8 +210,8 @@ class PenjualanOneBebekSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s", strtotime("-84 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-84 day")),
         ]);
-        $telurBebek->query()->update([
+        $telurBebek->update([
             'stock_kg' => $telurBebek->stock_kg - 10,
-        ], $telurBebek->id);
+        ]);
     }
 }
