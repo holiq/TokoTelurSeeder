@@ -22,9 +22,9 @@ class RestockTwoSeeder extends Seeder
         $restockAyam = Transaction::query()->create([
             'user_id' => $owner->id,
             'product_id' => $telurAyam->id,
-            'quantity' => 250,
+            'quantity' => 230,
             'price_kg' => 20000,
-            'total_price' => 5000000,
+            'total_price' => 4600000,
             'type' => 'restock',
             'created_at' => date("Y-m-d H:i:s", strtotime("-58 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-58 day")),
@@ -32,21 +32,21 @@ class RestockTwoSeeder extends Seeder
         $restockBebek = Transaction::query()->create([
             'user_id' => $owner->id,
             'product_id' => $telurBebek->id,
-            'quantity' => 176,
+            'quantity' => 135,
             'price_kg' => 25000,
-            'total_price' => 4400000,
+            'total_price' => 3375000,
             'type' => 'restock',
             'created_at' => date("Y-m-d H:i:s", strtotime("-58 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-58 day")),
         ]);
 
         $telurAyam->update([
-            'stock_kg' => $restockAyam->quantity,
+            'stock_kg' => $telurAyam->stock_kg + $restockAyam->quantity,
             'price_kg' => $restockAyam->price_kg + 1000,
         ]);
 
         $telurBebek->update([
-            'stock_kg' => $restockBebek->quantity,
+            'stock_kg' => $telurBebek->stock_kg + $restockBebek->quantity,
             'price_kg' => $restockBebek->price_kg + 1000,
         ]);
     }

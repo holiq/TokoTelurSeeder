@@ -41,12 +41,12 @@ class RestockThreeSeeder extends Seeder
         ]);
 
         $telurAyam->update([
-            'stock_kg' => $restockAyam->quantity,
+            'stock_kg' => $telurAyam->stock_kg + $restockAyam->quantity,
             'price_kg' => $restockAyam->price_kg + 1000,
         ]);
 
         $telurBebek->update([
-            'stock_kg' => $restockBebek->quantity,
+            'stock_kg' => $telurBebek->stock_kg +  $restockBebek->quantity,
             'price_kg' => $restockBebek->price_kg + 1000,
         ]);
     }

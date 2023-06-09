@@ -32,9 +32,9 @@ class RestockOneSeeder extends Seeder
         $restockBebek = Transaction::query()->create([
             'user_id' => $owner->id,
             'product_id' => $telurBebek->id,
-            'quantity' => 125,
+            'quantity' => 120,
             'price_kg' => 24000,
-            'total_price' => 3000000,
+            'total_price' => 2880000,
             'type' => 'restock',
             'created_at' => date("Y-m-d H:i:s", strtotime("-90 day")),
             'updated_at' => date("Y-m-d H:i:s", strtotime("-90 day")),
