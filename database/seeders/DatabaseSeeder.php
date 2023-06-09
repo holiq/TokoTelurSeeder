@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -29,7 +28,10 @@ class DatabaseSeeder extends Seeder
             PenjualanOneBebekSeeder::class,
             RestockTwoSeeder::class,
             PenjualanTwoAyamSeeder::class,
-            PenjualanTwoBebekSeeder::class
+            PenjualanTwoBebekSeeder::class,
+            RestockThreeSeeder::class,
+            PenjualanThreeAyamSeeder::class,
+            PenjualanThreeBebekSeeder::class,
         ]);
     }
 }
