@@ -26,7 +26,10 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             RestockOneSeeder::class,
             PenjualanOneAyamSeeder::class,
-            PenjualanOneBebekSeeder::class
+            PenjualanOneBebekSeeder::class,
+            RestockTwoSeeder::class,
+            PenjualanTwoAyamSeeder::class,
+            PenjualanTwoBebekSeeder::class
         ]);
     }
 }
