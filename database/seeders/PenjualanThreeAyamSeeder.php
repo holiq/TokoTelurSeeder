@@ -15,11 +15,13 @@ class PenjualanThreeAyamSeeder extends Seeder
      */
     public function run(): void
     {
-        $kasir = User::query()->where('role', 'kasir')->first();
+        $bayu = User::query()->where('full_name', 'Bayu')->first();
+        $bagas = User::query()->where('full_name', 'Bagas')->first();
+        $wahyu = User::query()->where('full_name', 'Wahyu')->first();
         $telurAyam = Product::query()->where('name', 'Telur Ayam')->first();
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -33,7 +35,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -47,7 +49,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -61,7 +63,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -75,7 +77,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -89,7 +91,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -103,7 +105,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -117,7 +119,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -131,7 +133,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -145,7 +147,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -158,7 +160,7 @@ class PenjualanThreeAyamSeeder extends Seeder
             'stock_kg' => $telurAyam->stock_kg - 3,
         ]);
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -172,7 +174,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -186,7 +188,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -200,7 +202,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -214,7 +216,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -228,7 +230,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -242,7 +244,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -256,7 +258,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -270,7 +272,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -284,7 +286,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -298,7 +300,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bagas->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -312,7 +314,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -326,7 +328,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -340,7 +342,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -354,7 +356,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -368,7 +370,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -382,7 +384,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -396,7 +398,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -410,7 +412,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -424,7 +426,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -438,7 +440,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -452,7 +454,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -466,7 +468,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -480,7 +482,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -494,7 +496,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -508,7 +510,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -522,7 +524,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -536,7 +538,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -550,7 +552,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -564,7 +566,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -578,7 +580,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -592,7 +594,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -606,7 +608,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,
@@ -620,7 +622,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 4,
             'price_kg' => $telurAyam->price_kg,
@@ -634,7 +636,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 3,
             'price_kg' => $telurAyam->price_kg,
@@ -647,7 +649,7 @@ class PenjualanThreeAyamSeeder extends Seeder
             'stock_kg' => $telurAyam->stock_kg - 3,
         ]);
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 8,
             'price_kg' => $telurAyam->price_kg,
@@ -661,7 +663,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 5,
             'price_kg' => $telurAyam->price_kg,
@@ -675,7 +677,7 @@ class PenjualanThreeAyamSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $wahyu->id,
             'product_id' => $telurAyam->id,
             'quantity' => 2,
             'price_kg' => $telurAyam->price_kg,

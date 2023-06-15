@@ -23,11 +23,35 @@ class UserSeeder extends Seeder
         ]);
 
         User::query()->insert([
-            'full_name' => 'Bayu Sebastian',
+            'full_name' => 'Bayu',
             'username' => 'babas',
             'role' => 'kasir',
             'password' => md5('123'),
             
+        ]);
+
+        User::query()->insert([
+            'full_name' => 'Bagas',
+            'username' => 'bagas',
+            'role' => 'kasir',
+            'password' => md5('123'),
+            
+        ]);
+
+        User::query()->insert([
+            'full_name' => 'Wahyu',
+            'username' => 'wahyu',
+            'role' => 'kasir',
+            'password' => md5('123'),
+
+        ]);
+
+        User::query()->insert([
+            'full_name' => 'Putri',
+            'username' => 'putri',
+            'role' => 'kasir',
+            'password' => md5('123'),
+
         ]);
     }
 }

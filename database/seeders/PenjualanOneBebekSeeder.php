@@ -15,11 +15,12 @@ class PenjualanOneBebekSeeder extends Seeder
      */
     public function run(): void
     {
-        $kasir = User::query()->where('role', 'kasir')->first();
+        $bayu = User::query()->where('full_name', 'Bayu')->first();
+        $putri = User::query()->where('full_name', 'Putri')->first();
         $telurBebek = Product::query()->where('name', 'Telur Bebek')->first();
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 5,
             'price_kg' => $telurBebek->price_kg,
@@ -33,7 +34,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $putri->id,
             'product_id' => $telurBebek->id,
             'quantity' => 10,
             'price_kg' => $telurBebek->price_kg,
@@ -47,7 +48,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 5,
             'price_kg' => $telurBebek->price_kg,
@@ -61,7 +62,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $putri->id,
             'product_id' => $telurBebek->id,
             'quantity' => 10,
             'price_kg' => $telurBebek->price_kg,
@@ -75,7 +76,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 5,
             'price_kg' => $telurBebek->price_kg,
@@ -89,7 +90,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $putri->id,
             'product_id' => $telurBebek->id,
             'quantity' => 10,
             'price_kg' => $telurBebek->price_kg,
@@ -103,7 +104,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 5,
             'price_kg' => $telurBebek->price_kg,
@@ -117,7 +118,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 10,
             'price_kg' => $telurBebek->price_kg,
@@ -131,7 +132,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 5,
             'price_kg' => $telurBebek->price_kg,
@@ -145,7 +146,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 10,
             'price_kg' => $telurBebek->price_kg,
@@ -159,7 +160,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 5,
             'price_kg' => $telurBebek->price_kg,
@@ -173,7 +174,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 10,
             'price_kg' => $telurBebek->price_kg,
@@ -187,7 +188,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 5,
             'price_kg' => $telurBebek->price_kg,
@@ -201,7 +202,7 @@ class PenjualanOneBebekSeeder extends Seeder
         ]);
 
         Transaction::query()->insert([
-            'user_id' => $kasir->id,
+            'user_id' => $bayu->id,
             'product_id' => $telurBebek->id,
             'quantity' => 10,
             'price_kg' => $telurBebek->price_kg,
